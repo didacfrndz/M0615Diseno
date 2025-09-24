@@ -44,7 +44,7 @@
             <li>Menu 3</li>
         </ol>
         <blockquote cite="http://example.com">Esto es una cita grande</blockquote>
-        <cite>Esto es una cita pequeña</cite>
+        <cite>Esto es una obra artisitca</cite>
 
         <dl>
             <dt>html</dt>
@@ -60,6 +60,72 @@
         <video controls src="video.mp4" poster="sis.jpg"></video>
         <audio controls src="pum.mp3"></audio>
         <iframe src="https://worldofwarcraft.blizzard.com/es-es/" frameborder="1"></iframe>
+        <mark>Soy fosforescente</mark>
+        <q>citas cortas</q>
+        <kbd>para combinacion de teclas</kbd>
+        <sup>Sup indice (letras arriba)</sup>
+        <sub>Sub indice (letras abajo)</sub>
+        <abbr title="Formacion Profesional">FP</abbr>
+        <small>letra mas pequeña</small>
+        <fieldset>
+            <legend>Formulario</legend>
+            <form action="#" method="get">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+
+                <label for="telefono">telefono:</label>
+                <input type="tel" id="telefono" name="telefono" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+
+                <label for="fecha">Dia de nacimiento:</label>
+                <input type="date" id="fecha" name="fecha" required><br><br>
+
+                <label for="color">Color favorito:</label>
+                <input type="color" id="color" name="color" value="#ff0000"><br><br>
+
+                <label for="ciudad">Cuidad:</label>
+                <input list="ciudades" name="ciudad" id="ciudad">
+                <datalist id="ciudades">
+                    <option value="Barcelona"></option>    
+                    <option value="Madrid"></option>    
+                    <option value="Valencia"></option>
+                </datalist>    
+
+                <label for="progres">Progreso</label>
+                <input type="range" id="progres" name="progres" min="0" max="100" value="50"><br><br>
+
+                <label for="check">Chequeo</label>
+                <input type="checkbox" id="check" name="check"><br><br>
+
+            
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+            </form>
+        </fieldset>
+        <details>
+            <summary>Mas informacion</summary>
+            <p>Esto es mas informacion que se puede ocultar o mostrar</p>
+        </details>
+        <button popover="popover1" popovertarget="popover1">Mostrar informacion</button>
+        <div id="popover1" role="tooltip">
+            <p>Esto es un popover</p>
+            <button>cerrar</button>
+        </div>
+        <div contenteditable="true">Texto editable</div>
+        <div hidden>Este texto no se ve</div>
+        <template>
+            <div class="tarjeta">
+                <h3>Titulo de la tarjeta</h3>
+                <p>Contenido de la tarjeta</p>
+
+            </div>
+        </template>
+        
     </main>
 
     <footer>
