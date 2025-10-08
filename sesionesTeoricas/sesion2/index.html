@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesion2</title>
+    <style>
+        .container {           
+            background-color: red;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20%;
+            gap: 20%;
+            
+        }
+        .card{
+                background-color: blue;
+                box-sizing: border-box;   
+                border: 1px solid black;
+                width: 100%;
+                height: 100%;       
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }  
+        .container .seccion1 {
+               display: flex;
+                flex-direction: column;
+                box-sizing: border-box;
+                width: 100%;
+                height: 100%;
+                padding: 20%;
+        }
+        @media (min-width: 660px) {
+            .container .seccion1 {
+                flex-direction: row;
+                box-sizing: border-box;
+                padding: 20%;
+            }
+        }
+        
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sesion2</h1>
+    <div class="container">
+        
+        <div class="seccion1">
+            <div class="card">1</div>
+            <div class="card">2</div>
+        </div>
+        
+        <div class="card">3</div>
+    </div>
+</body>
+</html>
